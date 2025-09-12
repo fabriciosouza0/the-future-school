@@ -1,0 +1,344 @@
+@import url("typography.css");
+
+:root {
+  --slide-height: 300px; /* altura de cada slide */
+  --gap: 12px;
+  --speed: 18s;
+}
+
+.divider {
+  width: 100%;
+
+  bottom: -250px;
+}
+
+/* ---------------
+   Botão gradiente
+----------------*/
+.btn-gradient-red {
+  position: relative;
+  background-color: transparent;
+  font-family: "Bai Jamjuree", Sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  white-space: nowrap;
+  text-transform: uppercase;
+  fill: #ffffff;
+  color: #ffffff;
+  background-image: linear-gradient(180deg, #e72f49 59%, #ff5e75 100%);
+  box-shadow: 0px 7px 10px 0px
+    rgba(29.34642857142857, 28.012499999999992, 62.249999999999986, 0.23);
+  border-style: solid;
+  border-width: 0px 0px 4px 0px;
+  border-color: #e63b53;
+  border-radius: 42px;
+  padding: 25px 20px 25px 20px;
+  overflow: hidden;
+}
+
+/* pseudo-elemento do brilho */
+.btn-gradient-red::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  transform: skewX(-20deg); /* dá o efeito diagonal */
+}
+
+/* animação ao hover */
+.btn-gradient-red:hover::before {
+  animation: shine 0.8s forwards;
+}
+
+/* keyframes da animação */
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+/* ---------------
+   Fim do botão gradiente
+----------------*/
+
+/* ---------------
+   Menu
+----------------*/
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 5px;
+  box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.37);
+}
+
+.menu > img {
+  width: 150px;
+  padding-left: 27px;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.menu-list > li > a {
+  text-decoration: none;
+  color: #fff;
+  padding: 13px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-list > li > a:hover {
+  color: #000;
+  background-color: #e72f49;
+}
+
+.schedule-button {
+  font-size: 11px;
+  padding: 15px 20px;
+}
+/* ---------------
+   Fim do Menu
+----------------*/
+
+/* ---------------
+   Header
+----------------*/
+.header {
+  position: relative;
+  height: 100dvh;
+  background-color: transparent;
+  --background-overlay: "";
+  background-image: linear-gradient(180deg, #13203500 65%, #021a33 100%),
+    url("../assets/backgrounds/bg-header.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.header::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -86px;
+  height: 140px; /* ajuste */
+  background: url('../assets/dividers/divider-01.png') no-repeat center bottom;
+  background-size: 100% 100%; /* com SVG aqui é seguro */
+  pointer-events: none;
+  z-index: 2;
+}
+
+@media (max-width:600px){
+  .site-header{
+    min-height: 220px;
+  }
+  .site-header::after{
+    height: 80px;
+    background-size: 100% 100%;
+  }
+}
+
+.container-header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
+.header-title > h2 {
+  font-family: "Bai Jamjuree", Sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.header-description {
+  font-family: "Sora", Sans-serif;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.2em;
+  color: #ffffff;
+}
+
+.header-description > p {
+  margin-bottom: 0;
+}
+
+.header-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 56px;
+  padding: 15px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.header-button-container > .subscribe {
+  width: fit-content;
+  white-space: nowrap;
+  text-align: center;
+  font-family: "Bai Jamjuree", Sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.2em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.header-caption {
+  font-family: "Sora", Sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+}
+
+/* ---------------
+   Header sliders
+----------------*/
+/* container visível */
+.vslider {
+  width: 300px;
+  height: 600px;
+  /* height: calc(
+    var(--slide-height) * 3 + var(--gap) * 2
+  );  */
+  /* mostra 3 slides por vez (mude conforme quiser) */
+  overflow: hidden;
+  padding: 8px;
+}
+
+/* track que se move (coluna) */
+.vslider-track {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  /* altura total: (slide + gap) * número_total_de_slides */
+  animation: slideUp linear infinite;
+  animation-duration: var(--speed);
+}
+
+/* track que se move (linha) */
+.vslider-track.down {
+  animation: slideDown linear infinite;
+  animation-duration: var(--speed);
+}
+
+/* cada slide */
+.slide {
+  height: var(--slide-height);
+  min-height: var(--slide-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #1f2937, #111827);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  padding: 12px;
+}
+
+/* calcular movimento: mover a altura de metade do track (número original de slides),
+   já que duplicamos os slides, basta mover o tamanho dos slides originais.
+   Aqui definimos keyframes genéricos que assumem que a track tem altura apropriada */
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-1 * (var(--slide-height) + var(--gap)) * 4));
+  } /* 4 = quantidade original de slides */
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(calc(-1 * (var(--slide-height) + var(--gap)) * 4));
+  } /* 4 = quantidade original de slides */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* pausa on hover e focus dentro do container */
+.container-header-slider:hover .vslider-track,
+.container-header-slider:focus-within .vslider-track {
+  animation-play-state: paused;
+}
+
+/* responsividade: reduzir altura de slide em telas menores */
+@media (max-width: 420px) {
+  :root {
+    --slide-height: 90px;
+  }
+  .vslider {
+    width: 100%;
+  }
+}
+/* ---------------
+   Fim do Header sliders
+----------------*/
+/* ---------------
+   Fim do Header
+----------------*/
+
+/* ---------------
+   Habilidades
+----------------*/
+
+.skills {
+  height: 100dvh;
+}
+
+/* ---------------
+   breakpoint
+----------------*/
+
+@media (min-width: 1200px) {
+  .header-slider {
+    flex-direction: row;
+  }
+
+  .header-title > h2 {
+    font-size: 58px;
+    text-align: left;
+  }
+
+  .header-description,
+  .header-caption {
+    text-align: left;
+  }
+
+  .header-button-container {
+    flex-direction: row;
+    margin: 0;
+  }
+}
