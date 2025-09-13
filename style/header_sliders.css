@@ -1,0 +1,108 @@
+:root {
+  --slider-height: 600px;
+  --sm-slider-height: 400px;
+  --slide-height: 300px; /* altura de cada slide */
+  --sm-slide-height: 200px;
+  --gap: 12px;
+  --speed: 18s;
+}
+
+.slider-container {
+  margin: auto 0;
+}
+
+/* container visível */
+.vslider {
+  position: relative;
+  width: 300px;
+  height: var(--sm-slider-height);
+  /* height: calc(
+    var(--slide-height) * 3 + var(--gap) * 2
+  );  */
+  /* mostra 3 slides por vez (mude conforme quiser) */
+  overflow: hidden;
+  padding: 8px;
+}
+
+/* track que se move (coluna) */
+.vslider-track {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  /* altura total: (slide + gap) * número_total_de_slides */
+  animation: slideUp linear infinite;
+  animation-duration: var(--speed);
+}
+
+/* track que se move (linha) */
+.vslider-track.down {
+  animation: slideDown linear infinite;
+  animation-duration: var(--speed);
+}
+
+/* cada slide */
+.slide {
+  height: var(--sm-slide-height);
+  min-height: var(--sm-slide-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #1f2937, #111827);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  padding: 12px;
+}
+
+/* pausa on hover e focus dentro do container */
+.container-header-slider:hover .vslider-track,
+.container-header-slider:focus-within .vslider-track {
+  animation-play-state: paused;
+}
+
+/* responsividade: reduzir altura de slide em telas menores */
+@media (max-width: 420px) {
+  :root {
+    --slide-height: 90px;
+  }
+  .vslider {
+    width: 100%;
+  }
+}
+
+/* ---------------
+   breakpoints
+----------------*/
+/* sm and up */
+@media (min-width: 576px) {
+}
+
+/* md and up */
+@media (min-width: 768px) {
+}
+
+/* lg and up */
+@media (min-width: 992px) {
+  .slider-container {
+    margin: 0;
+  }
+
+  .vslider {
+    height: var(--slider-height);
+    min-height: var(--slider-height);
+  }
+
+  .slide {
+    height: var(--slide-height);
+    min-height: var(--slide-height);
+  }
+}
+
+/* xl and up */
+@media (min-width: 1200px) {
+}
+
+/* xxl and up */
+@media (min-width: 1400px) {
+}

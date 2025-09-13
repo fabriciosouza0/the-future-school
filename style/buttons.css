@@ -1,0 +1,73 @@
+/* ---------------
+   Botão gradiente
+----------------*/
+.btn-gradient-red {
+  position: relative;
+  background-color: transparent;
+  font-family: "Bai Jamjuree", Sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  white-space: wrap;
+  text-transform: uppercase;
+  fill: #ffffff;
+  color: #ffffff;
+  background-image: linear-gradient(180deg, #e72f49 59%, #ff5e75 100%);
+  box-shadow: 0px 7px 10px 0px
+    rgba(29.34642857142857, 28.012499999999992, 62.249999999999986, 0.23);
+  border-style: solid;
+  border-width: 0px 0px 4px 0px;
+  border-color: #e63b53;
+  border-radius: 42px;
+  padding: 25px 20px 25px 20px;
+  overflow: hidden;
+}
+
+/* pseudo-elemento do brilho */
+.btn-gradient-red::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  transform: skewX(-20deg); /* dá o efeito diagonal */
+}
+
+/* animação ao hover */
+.btn-gradient-red:hover::before {
+  animation: shine 0.8s forwards;
+}
+
+.schedule-button {
+  font-size: 11px;
+  padding: 15px 20px;
+}
+
+/* ---------------
+   breakpoints
+----------------*/
+/* sm and up */
+@media (min-width: 576px) {
+}
+
+/* md and up */
+@media (min-width: 768px) {
+}
+
+/* lg and up */
+@media (min-width: 992px) {
+}
+
+/* xl and up */
+@media (min-width: 1200px) {
+}
+
+/* xxl and up */
+@media (min-width: 1400px) {
+}

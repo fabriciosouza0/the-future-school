@@ -1,0 +1,30 @@
+/* keyframes da animação de brilho */
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+/* calcular movimento: mover a altura de metade do track (número original de slides),
+   já que duplicamos os slides, basta mover o tamanho dos slides originais.
+   Aqui definimos keyframes genéricos que assumem que a track tem altura apropriada */
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-1 * (var(--slide-height) + var(--gap)) * 4));
+  } /* 4 = quantidade original de slides */
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(calc(-1 * (var(--slide-height) + var(--gap)) * 4));
+  } /* 4 = quantidade original de slides */
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,26 @@
+/* largura do scrollbar */
+::-webkit-scrollbar {
+  width: 9px; /* ajuste conforme precisar */
+}
+
+/* fundo da trilha */
+::-webkit-scrollbar-track {
+  background: #000; /* preto */
+}
+
+/* thumb (parte que desliza) */
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border: 2px solid #000;
+  border-radius: 0; /* quadrado */
+}
+
+/* remove as setas */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* remove efeito hover (sem mudança de cor) */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
