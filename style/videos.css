@@ -1,0 +1,57 @@
+.background-overlay-video-section {
+  background-color: transparent;
+  background-image: url("../assets/backgrounds/bg-videos-section.png"),
+    linear-gradient(180deg, #0b131f 0%, #021a33 100%);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 10px;
+}
+
+.video-section {
+  position: relative;
+  height: auto;
+  padding: 40px 0;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 100dvh;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 16px;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #13203582 0%, #0c131f 100%);
+  padding: 40px 0px;
+}
+
+/* ---------------
+   breakpoints
+----------------*/
+/* sm and up */
+@media (min-width: 576px) {
+}
+
+/* md and up */
+@media (min-width: 768px) {
+}
+
+/* lg and up */
+@media (min-width: 992px) {
+  .video-container {
+    flex-direction: row;
+  }
+}
+
+/* xl and up */
+@media (min-width: 1200px) {
+}
+
+/* xxl and up */
+@media (min-width: 1400px) {
+  .video-section {
+    max-width: 1400px;
+  }
+}

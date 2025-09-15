@@ -74,27 +74,6 @@
   color: #4ccdbb;
 }
 
-.skill-card-title .divider-separator {
-  /* Essencial para que o <span> aceite dimensões */
-  display: inline-block;
-
-  /* Dimensões do elemento (ajuste conforme necessário) */
-  width: 30%;
-  height: 25px;
-
-  /* Cor de fundo que aparecerá ENTRE as listras */
-  background-color: transparent;
-
-  /* A 'mágica' que cria o padrão de listras diagonais */
-  background-image: repeating-linear-gradient(
-    45deg,
-    #32b3a9,
-    #32b3a9 5px,
-    transparent 5px,
-    transparent 10px
-  );
-}
-
 .skill-card-description > p:first-child {
   font-family: "Bai Jamjuree", Sans-serif;
   font-size: 18px;

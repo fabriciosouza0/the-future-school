@@ -1,0 +1,109 @@
+.statistics {
+  position: relative;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.background-overlay.stats {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #021a32 0%, #0a1321 69%);
+}
+
+.stats-card-overlay {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #929292;
+}
+
+.stats-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 16px;
+  background-image: linear-gradient(180deg, #132035ad 0%, #0c1420 100%);
+  padding: 40px 0 10px 0;
+}
+
+.stats-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 10px 20px;
+  color: #ffffff;
+  width: 100%;
+}
+
+.stats-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.stats-text p {
+  text-align: center;
+  font-family: "Bai Jamjuree", Sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.stats-card .stats-card-title {
+  font-size: 69px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
+
+.stats-card .stats-card-subtitle {
+  font-family: "Bai Jamjuree", Sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 1em;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+/* ---------------
+   breakpoints
+----------------*/
+/* sm and up */
+@media (min-width: 576px) {
+}
+
+/* md and up */
+@media (min-width: 768px) {
+  .stats-info {
+    flex-direction: row;
+  }
+
+  .stats-card-overlay {
+    border-width: 0px 1px 0px 0px;
+  }
+
+  .stats-card {
+    width: 33.333%;
+  }
+}
+
+/* lg and up */
+@media (min-width: 992px) {
+}
+
+/* xl and up */
+@media (min-width: 1200px) {
+  .statistics {
+    max-width: 1200px;
+  }
+}
+
+/* xxl and up */
+@media (min-width: 1400px) {
+}

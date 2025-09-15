@@ -5,12 +5,36 @@
 @import url("buttons.css");
 @import url("menu.css");
 @import url("header_sliders.css");
-
-
+@import url("statistics.css");
+@import url("videos.css");
+/* @import url("about.css");
+@import url("contact.css");
+@import url("footer.css"); */
 
 .divider {
   width: 100%;
   bottom: -250px;
+}
+
+.divider-separator {
+  /* Essencial para que o <span> aceite dimensões */
+  display: inline-block;
+
+  /* Dimensões do elemento (ajuste conforme necessário) */
+  width: 30%;
+  height: 25px;
+
+  /* Cor de fundo que aparecerá ENTRE as listras */
+  background-color: transparent;
+
+  /* A 'mágica' que cria o padrão de listras diagonais */
+  background-image: repeating-linear-gradient(
+    45deg,
+    #32b3a9,
+    #32b3a9 5px,
+    transparent 5px,
+    transparent 10px
+  );
 }
 
 /* ---------------
