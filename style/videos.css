@@ -1,4 +1,6 @@
 .background-overlay-video-section {
+  position: relative;
+  height: auto;
   background-color: transparent;
   background-image: url("../assets/backgrounds/bg-videos-section.png"),
     linear-gradient(180deg, #0b131f 0%, #021a33 100%);
@@ -10,17 +12,74 @@
 
 .video-section {
   position: relative;
+  top: -50px;
+  position: relative;
   height: auto;
   padding: 40px 0;
   margin: 0 auto;
   max-width: 100%;
-  height: 100dvh;
 }
 
 .video-container {
+  position: relative;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  justify-content: center;
   flex-wrap: wrap;
+  border-radius: 16px;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #13203582 0%, #0c131f 100%);
+  padding: 40px 0px;
+}
+
+.video-content-left .video-title > h2 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 38px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  color: rgb(74, 205, 186);
+  text-align: center;
+}
+
+.video-content-right > h2 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  color: rgb(74, 205, 186);
+  text-align: center;
+}
+
+.video-content-right > p {
+  text-align: center;
+  font-family: "Sora", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  color: rgb(255, 255, 255);
+}
+
+.swiper.videos {
+  height: 200px;
+  max-width: 320px;
+}
+
+.swiper-slide.videos {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #13203582 0%, #0c131f 100%);
+  padding: 40px 0px;
+}
+
+.swiper.highlights {
+  height: 320px;
+  max-width: 320px;
+}
+
+.swiper-slide.highlights {
   border-radius: 16px;
   background-color: transparent;
   background-image: linear-gradient(180deg, #13203582 0%, #0c131f 100%);
@@ -32,10 +91,20 @@
 ----------------*/
 /* sm and up */
 @media (min-width: 576px) {
+  .swiper.videos {
+    max-width: 500px;
+  }
+
+  .swiper.highlights {
+    max-width: 500px;
+  }
 }
 
 /* md and up */
 @media (min-width: 768px) {
+  .video-content-left .video-title > h2 {
+    font-size: 44px;
+  }
 }
 
 /* lg and up */

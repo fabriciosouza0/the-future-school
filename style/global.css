@@ -7,8 +7,9 @@
 @import url("header_sliders.css");
 @import url("statistics.css");
 @import url("videos.css");
-/* @import url("about.css");
-@import url("contact.css");
+@import url("feedbacks.css");
+@import url("about.css");
+/* @import url("contact.css");
 @import url("footer.css"); */
 
 .divider {
@@ -35,6 +36,28 @@
     transparent 5px,
     transparent 10px
   );
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-size: 18px;
+  --swiper-navigation-color: #ffffff;
+  --swiper-navigation-width: 2px;
+  --swiper-navigation-sides-offset: 10px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  width: 0px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ffffff;
+}
+
+.swiper {
+  --swiper-navigation-prev-svg: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>');
+  --swiper-navigation-next-svg: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>');
 }
 
 /* ---------------

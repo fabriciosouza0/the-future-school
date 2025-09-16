@@ -1,0 +1,95 @@
+.quem-somos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #021931;
+  border: 2px solid #4bcdbb;
+  border-radius: 10px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* CARD TEXTO */
+.card-quem-somos {
+  flex: 1;
+  max-width: 450px;
+}
+
+.card-quem-somos h2 {
+  color: #4bcdbb;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-quem-somos .divider {
+  width: 80px;
+  height: 15px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #4bcdbb,
+    #4bcdbb 6px,
+    transparent 6px,
+    transparent 12px
+  );
+  margin-bottom: 1.5rem;
+}
+
+.card-quem-somos p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.card-quem-somos .btn {
+  display: inline-block;
+  background-color: #4bcdbb;
+  color: #021931;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.card-quem-somos .btn:hover {
+  background-color: #37a89a;
+}
+
+/* IMAGENS */
+.images {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.images .main-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.small-image {
+  position: absolute;
+  border: 3px solid #4bcdbb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.small-image img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+.small-image.top {
+  top: 10px;
+  right: 10px;
+}
+
+.small-image.bottom {
+  bottom: 10px;
+  left: 10px;
+}
