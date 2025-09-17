@@ -1,0 +1,58 @@
+.background-overlay-information {
+  position: relative;
+  top: -1px;
+  background-color: #f7f5f6;
+  padding-bottom: 2.5rem;
+}
+
+.card-information {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.card-information > h2 {
+  font-family: "Bai Jamjuree", Sans-serif;
+  font-size: 44px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #132035;
+}
+
+.card-information > p {
+  text-align: justify;
+  font-family: "Sora", Sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4em;
+  letter-spacing: -0.1px;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.information-img {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  height: auto;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+}
+
+/* md and up */
+@media (min-width: 768px) {
+}
+
+/* lg and up */
+@media (min-width: 992px) {
+}
+
+/* xl and up */
+@media (min-width: 1200px) {
+}
+
+/* xxl and up */
+@media (min-width: 1400px) {
+}
