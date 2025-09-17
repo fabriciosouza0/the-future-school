@@ -1,0 +1,84 @@
+.background-overlay-transform-school {
+  background-color: #e72f49;
+  background-image: url("../assets/backgrounds/bg-transform-school.jpg"),
+    linear-gradient(180deg, #ffffff00 0%, #e72f49 100%);
+  background-position: top center;
+  background-size: cover;
+}
+
+.robot-img {
+  position: relative;
+  z-index: 2;
+  max-width: 540px;
+  object-fit: cover;
+}
+
+.btn-regular {
+  background: #4bcdbb;
+  color: #fff;
+  border-radius: 32px;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.btn-free {
+  background: #00253a;
+  color: #fff;
+  border-radius: 32px;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.btn-regular:hover {
+  background: #37a89a;
+}
+
+.btn-free:hover {
+  background: #021a32;
+}
+
+.trusted-title {
+  font-size: 0rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.trusted-logos img {
+  object-fit: contain;
+}
+
+.transform-title {
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.transform-description {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.transform-list {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .robot-img {
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .trusted-logos img {
+    height: 32px;
+  }
+
+  .transform-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
