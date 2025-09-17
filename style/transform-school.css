@@ -1,46 +1,25 @@
 .background-overlay-transform-school {
   background-color: #e72f49;
-  background-image: url("../assets/backgrounds/bg-transform-school.jpg"),
-    linear-gradient(180deg, #ffffff00 0%, #e72f49 100%);
-  background-position: top center;
+  background-image: linear-gradient(180deg, #ffffff00 0%, #e72f49 100%),
+    url("../assets/backgrounds/bg-transform-school.jpg");
   background-size: cover;
+  height: auto;
+  padding-top: 2rem;
 }
 
 .robot-img {
   position: relative;
   z-index: 2;
-  max-width: 540px;
+  max-width: 100%;
   object-fit: cover;
 }
 
-.btn-regular {
-  background: #4bcdbb;
-  color: #fff;
-  border-radius: 32px;
-  font-weight: 700;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-}
-
-.btn-free {
-  background: #00253a;
-  color: #fff;
-  border-radius: 32px;
-  font-weight: 700;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-}
-
-.btn-regular:hover {
-  background: #37a89a;
-}
-
-.btn-free:hover {
-  background: #021a32;
-}
-
 .trusted-title {
-  font-size: 0rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #fff;
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 
 .trusted-logos img {
@@ -48,12 +27,12 @@
 }
 
 .transform-title {
-  font-size: 2.3rem;
+  font-size: 1.2rem;
   font-weight: 900;
   color: #fff;
   line-height: 1.1;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
 }
 
 .transform-description {
@@ -67,9 +46,17 @@
   color: #fff;
 }
 
-@media (max-width: 900px) {
+.divider.transform-school {
+  margin-top: 2rem;
+}
+
+@media (min-width: 900px) {
+  .background-overlay-transform-school {
+    padding-top: 10rem;
+  }
+
   .robot-img {
-    max-width: 320px;
+    max-width: 540px;
     text-align: center;
   }
 
@@ -78,7 +65,11 @@
   }
 
   .transform-title {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 33px;
+    text-align: left;
+  }
+
+  .divider.transform-school {
+    margin-top: 10rem;
   }
 }

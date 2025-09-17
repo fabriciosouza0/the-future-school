@@ -50,6 +50,42 @@
   padding: 15px 20px;
 }
 
+.btn-regular,
+.btn-free {
+  font-family: "Bai Jamjuree", Sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  fill: #ffffff;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-style: solid;
+  border-width: 0px 0px 5px 0px;
+  border-radius: 31px;
+  text-decoration: none;
+}
+
+.btn-regular {
+  background-color: #4ccdbb;
+  border-color: #3ba193;
+  padding: 20px 40px 20px 40px;
+}
+
+.btn-regular:hover {
+  background-color: #299e8e;
+  color: #ffffff;
+}
+
+.btn-free {
+  background-color: #021a32;
+  border-color: #01080f;
+  padding: 20px 20px 20px 20px;
+}
+
+.btn-free:hover {
+  background-color: #299e8e;
+  color: #ffffff;
+}
+
 /* ---------------
    breakpoints
 ----------------*/

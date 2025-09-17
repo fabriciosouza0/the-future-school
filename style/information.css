@@ -5,6 +5,10 @@
   padding-bottom: 2.5rem;
 }
 
+.row.information {
+  flex-direction: column-reverse;
+}
+
 .card-information {
   display: flex;
   gap: 20px;
@@ -43,6 +47,9 @@
 
 /* md and up */
 @media (min-width: 768px) {
+  .row.information {
+    flex-direction: row;
+  }
 }
 
 /* lg and up */
