@@ -1,11 +1,31 @@
 .background-overlay-social-media {
+  position: relative;
   background-color: transparent;
   background-image: linear-gradient(180deg, #021a32 0%, #0b131f 100%);
+  overflow-x: hidden;
 }
 
-.social-media-container {
+.social-media-text-container {
   display: flex;
-  max-width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.swiper.social-media {
+  width: 100%;
+}
+
+.card-social-media {
+  border: 3px solid #d8d8d8;
+  border-radius: 16px;
+}
+
+.card-social-media img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 13px;
+  height: 560px;
 }
 
 .social-media-title {
@@ -20,25 +40,10 @@
   max-width: 400px;
 }
 
-/* ---------------
-   breakpoints
-----------------*/
-/* sm and up */
-@media (min-width: 576px) {
-}
-
-/* md and up */
-@media (min-width: 768px) {
-}
-
-/* lg and up */
-@media (min-width: 992px) {
-}
-
 /* xl and up */
 @media (min-width: 1200px) {
-}
-
-/* xxl and up */
-@media (min-width: 1400px) {
+  .social-media-text-container {
+    display: flex;
+    align-items: flex-start;
+  }
 }
