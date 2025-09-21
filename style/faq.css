@@ -122,29 +122,6 @@
   color: #fff;
 }
 
-.accordion {
-  /* Altera a cor do texto e do ícone quando está fechado */
-  --bs-accordion-color: #f8f9fa; 
-  
-  /* Altera a cor de fundo */
-  --bs-accordion-bg: #212529;
-  
-  /* Cor do ícone quando o item está aberto */
-  --bs-accordion-active-color: #ffc107;
-  
-  /* Cor de fundo do item quando está aberto */
-  --bs-accordion-active-bg: #343a40;
-  
-  /* Cor do texto do botão quando está focado (outline) */
-  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.5);
-  
-  /* Cor da borda entre os itens */
-  --bs-accordion-border-color: #495057;
-  
-  /* Arredondamento das bordas */
-  --bs-accordion-border-radius: .5rem;
-}
-
 @media (max-width: 991.98px) {
   .faq-bg-text {
     font-size: 5.5rem;

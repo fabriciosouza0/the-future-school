@@ -39,13 +39,6 @@
 ----------------*/
 /* sm and up */
 @media (min-width: 576px) {
-  .menu {
-    justify-content: space-between;
-  }
-
-  .menu-list {
-    display: flex;
-  }
 }
 
 /* md and up */
@@ -54,6 +47,12 @@
 
 /* lg and up */
 @media (min-width: 992px) {
+  .menu {
+    justify-content: space-between;
+  }
+  .menu-list {
+    display: flex;
+  }
 }
 
 /* xl and up */

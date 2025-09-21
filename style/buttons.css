@@ -1,7 +1,8 @@
 /* ---------------
    Botão gradiente
 ----------------*/
-.btn-gradient-red {
+.btn-gradient-red,
+a.btn-gradient-red {
   position: relative;
   background-color: transparent;
   font-family: "Bai Jamjuree", Sans-serif;
@@ -24,7 +25,8 @@
 }
 
 /* pseudo-elemento do brilho */
-.btn-gradient-red::before {
+.btn-gradient-red::before,
+a.btn-gradient-red::before {
   content: "";
   position: absolute;
   top: 0;
@@ -41,7 +43,8 @@
 }
 
 /* animação ao hover */
-.btn-gradient-red:hover::before {
+.btn-gradient-red:hover::before,
+a.btn-gradient-red:hover::before {
   animation: shine 0.8s forwards;
 }
 
