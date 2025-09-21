@@ -705,13 +705,14 @@
           </div>
         </div>
       </div>
+      <img class="divider mt-5" src="assets/dividers/divider-04.png" alt="" />
     </div>
 
     <div class="background-overlay-faq">
-      <section class="container py-5 faq-section">
-        <div class="row align-items-center">
+      <section class="container">
+        <div class="row">
           <!-- Esquerda: Título, texto e imagem ilustrativa -->
-          <div class="col-lg-6 position-relative mb-5 mb-lg-0 faq-left">
+          <div class="col-lg-4 position-relative mt-5">
             <div class="faq-bg-text">F.A.Q.</div>
             <div class="faq-small-title">DÚVIDAS?</div>
             <h2 class="faq-main-title">DÚVIDAS<br />FREQUENTES</h2>
@@ -725,119 +726,110 @@
             </div>
           </div>
           <!-- Direita: Accordion e CTA -->
-          <div class="col-lg-6">
-            <div class="accordion faq-list" id="faqAccordion">
-              <div class="accordion-item faq-item mb-3">
-                <h2 class="accordion-header" id="faqHeadingOne">
+          <div class="col-lg-8 d-flex flex-column gap-4">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
                   <button
-                    class="accordion-button collapsed"
+                    class="accordion-button"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#faqOne"
-                    aria-expanded="false"
-                    aria-controls="faqOne"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
                   >
                     Quais são os cursos da TFS4.0?
                   </button>
                 </h2>
                 <div
-                  id="faqOne"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="faqHeadingOne"
-                  data-bs-parent="#faqAccordion"
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse euismod, urna eu tincidunt consectetur, nisi
-                    nisl aliquam enim, eu dictum enim urna euismod enim.
+                    <strong>This is the first item's accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
                   </div>
                 </div>
               </div>
-              <div class="accordion-item faq-item mb-3">
-                <h2 class="accordion-header" id="faqHeadingTwo">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#faqTwo"
+                    data-bs-target="#collapseTwo"
                     aria-expanded="false"
-                    aria-controls="faqTwo"
+                    aria-controls="collapseTwo"
                   >
-                    Quanto tempo de curso?
+                    Accordion Item #2
                   </button>
                 </h2>
                 <div
-                  id="faqTwo"
+                  id="collapseTwo"
                   class="accordion-collapse collapse"
-                  aria-labelledby="faqHeadingTwo"
-                  data-bs-parent="#faqAccordion"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse euismod, urna eu tincidunt consectetur, nisi
-                    nisl aliquam enim, eu dictum enim urna euismod enim.
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
                   </div>
                 </div>
               </div>
-              <div class="accordion-item faq-item mb-3">
-                <h2 class="accordion-header" id="faqHeadingThree">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#faqThree"
+                    data-bs-target="#collapseThree"
                     aria-expanded="false"
-                    aria-controls="faqThree"
+                    aria-controls="collapseThree"
                   >
-                    O curso é presencial ou online?
+                    Accordion Item #3
                   </button>
                 </h2>
                 <div
-                  id="faqThree"
+                  id="collapseThree"
                   class="accordion-collapse collapse"
-                  aria-labelledby="faqHeadingThree"
-                  data-bs-parent="#faqAccordion"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse euismod, urna eu tincidunt consectetur, nisi
-                    nisl aliquam enim, eu dictum enim urna euismod enim.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item faq-item mb-3">
-                <h2 class="accordion-header" id="faqHeadingFour">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#faqFour"
-                    aria-expanded="false"
-                    aria-controls="faqFour"
-                  >
-                    É necessário um computador muito potente ou algum kit de
-                    robótica?
-                  </button>
-                </h2>
-                <div
-                  id="faqFour"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="faqHeadingFour"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse euismod, urna eu tincidunt consectetur, nisi
-                    nisl aliquam enim, eu dictum enim urna euismod enim.
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
                   </div>
                 </div>
               </div>
             </div>
-            <div class="d-flex justify-content-center mt-4">
-              <a href="#" class="btn-gradient-red w-100 text-center">
-                AGENDE UMA OFICINA POR APENAS R$47,00
-              </a>
-            </div>
+            <a href="" class="btn-cta-faq">
+              <button class="btn-gradient-red">
+                Agende uma oficina por apenas R$47,00
+              </button>
+            </a>
           </div>
         </div>
       </section>
@@ -848,6 +840,7 @@
         <div class="d-flex justify-content-center">
           <img class="img-fluid w-30 w-md-50" src="assets/logo.png" alt="" />
         </div>
+
         <div class="d-flex justify-content-center align-items-center">
           <p class="text-white text-nowrap justify-content-center">
             © 2023 The Future School - Todos os Direitos Reservados
